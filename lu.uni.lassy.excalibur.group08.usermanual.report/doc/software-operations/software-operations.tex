@@ -1,0 +1,76 @@
+\chapter{Software operations}
+\label{chap:soptware_operations}
+
+
+Our project has three parts: smartphone application, tracking software and our
+servers. The application can be used by any person and the software will be used
+by a person in authority at the fire department. The tracking software will be
+triggered by a notification as an alert as soon as the smartphone application is
+being used. It will indicate the location with the picture as well as the date.
+The person in authority will decide which security level will be taken as well
+as further needed procedures. After receiving the picture, the person in
+authority will need to call the person who took the picture to obtain more
+details on the situation or to conciliate the person. The gathered data will be
+saved on our servers as a backup or for case investigations but never for public
+media purposes. Notice: The taken pictures will never be saved on your
+smartphone for privacy reasons.
+
+
+\section{MyOperation}
+\label{operation:MyOperation}
+The system operator creates and adds a new fire to the system after being
+informed by a third party (citizen, witness) and selects diffrent rescue workers
+for the fire.
+
+\begin{description}
+
+\item \textbf{Parameters:} Witness or victim, Information about
+fire, Rescue workers
+\item \textbf{Precondition:} The system operator is logged in and has received information from a reporter.
+\item \textbf{Post-condition:} A new fire has been added to the system and the
+new fire has been assigned to rescue worker, the rescue worker has received an
+automatic notification from the system.
+\item \textbf{Output messages:} The selected rescue worker will be notified
+automatically once the crisis has been created.
+
+\item \textbf{Triggering:}
+\begin{enumerate}
+\item From within the crisis management window fill out the required entries
+related to the personal information of the vicitm or witness.
+\item Fill out the entries related to the fire and if you are a victim or a
+witness. If you are a victim you need to report if you are alone, trapped and
+send a photo. If you are witness you need to report what is bruning. Both
+witness and victim need to report what is burning and what the cause of the
+fire is.
+\item Click on the Send button and the fire will be reported to the central
+station.
+\end{enumerate}
+
+ 
+\end{description}
+
+ 
+\subsection{Apllication usage}
+Starting with an example of smartphone application:
+\\[8pt]
+A walking person who sees a burning barn of a farmer can quickly use his
+application without waiting for an answer on a call or describing the location
+of the incident. At the start he will need to define himself as a witness and
+indicate what is burning. After, he will need to confirm that he is sure to
+send the data, then he needs to take a picture which will be send to the next
+fire department. Additional details will be shown to help specify the situation.
+The person will receive immediately a call from the department to communicate
+with him as the witness for extra details or to settle down the person in panic
+situations if needed.
+
+\subsection{Tracking software}
+Example of our tracking software:
+\\[8pt]
+The person in authority receives an alert at the fire department. A notification
+pops up on the screen with a map location, the time and the picture from the
+crash scene. That person justifies the right emergency level and passes the
+given details to the firefighters. To clarify the situation, he or she calls
+that person for further information or just to calm down the witness.
+
+
+
